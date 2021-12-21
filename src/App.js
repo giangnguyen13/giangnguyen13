@@ -1,24 +1,23 @@
-import logo from "./logo.svg";
-import "./index.css";
+import React from "react";
+import Sidebar from "./components/SideBar";
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+    <>
+      <Sidebar />
+      <div className='content'>
+        <h2>Responsive Sidebar Example</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This example use media queries to transform the sidebar to a top
+          navigation bar when the screen size is 700px or less.
         </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p>
+          We have also added a media query for screens that are 400px or less,
+          which will vertically stack and center the navigation links.
+        </p>
+        <h3>Resize the browser window to see the effect.</h3>
+      </div>
+    </>
   );
 }
 
