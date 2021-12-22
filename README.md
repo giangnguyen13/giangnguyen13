@@ -1,6 +1,6 @@
 # Hello friends, Giang Nguyen here!! o((>ω< ))o
 
-I'm a Full Stack Developer based in Canada\_ 🍁. My experience in the web development field helps me deliver the best quality to many projects.
+I'm a Full Stack Developer based in Canada 🍁. My experience in the web development field helps me deliver the best quality to many projects.
 
 [![Linkedin: giangnguyen13](https://img.shields.io/badge/-giangnguyen13-0A66C2?logo=Linkedin&logoColor=white&style=flat-square&link=https://www.linkedin.com/in/giangnguyen13/)](https://www.linkedin.com/in/giangnguyen13/)
 [![GitHub giangnguyen13](https://img.shields.io/github/followers/giangnguyen13?label=giangnguyen13&style=social)](https://github.com/giangnguyen13)
