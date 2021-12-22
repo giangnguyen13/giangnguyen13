@@ -11,36 +11,44 @@ import {
   FaCalendarAlt,
   FaWpforms,
 } from "react-icons/fa";
+import {
+  HouseFill,
+  PersonLinesFill,
+  FileTextFill,
+  CodeSquare,
+  Mailbox2,
+} from "react-bootstrap-icons";
+const ICON_SIZE = 32;
 export const links = [
   {
     id: 1,
     url: "/",
-    text: "home",
-    icon: <FaHome />,
+    text: "Home",
+    icon: <HouseFill size={ICON_SIZE} />,
   },
   {
     id: 2,
-    url: "/team",
-    text: "team",
-    icon: <FaUserFriends />,
+    url: "/about",
+    text: "About",
+    icon: <PersonLinesFill size={ICON_SIZE} />,
   },
   {
     id: 3,
     url: "/projects",
-    text: "projects",
-    icon: <FaFolderOpen />,
+    text: "Projects",
+    icon: <FileTextFill size={ICON_SIZE} />,
   },
   {
     id: 4,
-    url: "/calendar",
-    text: "calendar",
-    icon: <FaCalendarAlt />,
+    url: "/skills",
+    text: "Skills",
+    icon: <CodeSquare size={ICON_SIZE} />,
   },
   {
     id: 5,
-    url: "/documents",
-    text: "documents",
-    icon: <FaWpforms />,
+    url: "/contact",
+    text: "Contact",
+    icon: <Mailbox2 size={ICON_SIZE} />,
   },
 ];
 

@@ -1,27 +1,89 @@
-import React from "react";
-import logo from "../logo.svg";
-import { FaTimes, FaBars, FaUserFriends } from "react-icons/fa";
-import { social, links } from "../data";
+import React, { useState, useEffect } from "react";
+import NavItem from "./NavItem";
+import ArrowIcon from "./ArrowIcon";
+import { links } from "../data";
 
 const Sidebar = () => {
+  const [isExpanded, setIsExpanded] = useState("expand");
+  const openNavbar = () => {
+    if (window.innerWidth > 600) {
+      let main = document.getElementById("container");
+      main.style.marginLeft = "17rem";
+      main.style.transition = "margin 600ms ease";
+      let navbar = document.getElementsByClassName("navbar")[0];
+      navbar.style.width = "16rem";
+      navbar.style.transition = "width 600ms ease";
+    }
+  };
+
+  const closeNavbar = () => {
+    if (window.innerWidth > 600) {
+      let main = document.getElementById("container");
+      main.style.marginLeft = "5rem";
+      main.style.transition = "margin 600ms ease";
+      let navbar = document.getElementsByClassName("navbar")[0];
+      navbar.style.width = "5rem";
+      navbar.style.transition = "width 600ms ease";
+    }
+  };
+
+  const toggleExpand = () => {
+    if (isExpanded == "expand") {
+      setIsExpanded("");
+      closeNavbar();
+    } else {
+      setIsExpanded("expand");
+      openNavbar();
+    }
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      let main = document.getElementById("container");
+      let navbar = document.getElementsByClassName("navbar")[0];
+      if (window.innerWidth > 600) {
+        main.style.marginLeft = isExpanded ? "17rem" : "5rem";
+        main.style.transition = "margin 600ms ease";
+        // to avoid weird animation on first time load or after the style being removed
+        navbar.style.width = isExpanded ? "16rem" : "5rem";
+        navbar.style.transition = "width 600ms ease";
+      } else {
+        main.style.margin = "0";
+        main.style.transition = "margin 600ms ease";
+        navbar.removeAttribute("style");
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
-    <div className='sidebar'>
-      <a
-        href='/'
-        className='d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none'
-      >
-        <svg class='bi me-2' width='40' height='32'></svg>
-        <span class='fs-4'>Sidebar</span>
-      </a>
-      <div>
-        <a className='active' href='#home'>
-          Home
-        </a>
-        <a href='#news'>News</a>
-        <a href='#contact'>Contact</a>
-        <a href='#about'>About</a>
-      </div>
-    </div>
+    <nav
+      className={`navbar ${isExpanded}`}
+      style={{ width: "16rem", transition: "width 600ms ease 0s" }}
+    >
+      <ul className={`navbar-nav ${isExpanded}`}>
+        <li className='logo'>
+          <a
+            href='#'
+            className={`nav-link ${isExpanded}`}
+            onClick={toggleExpand}
+          >
+            <span className='link-text logo-text'>(｡･∀･)ﾉﾞ</span>
+            <ArrowIcon />
+          </a>
+        </li>
+        {links.map((link) => {
+          return (
+            <NavItem
+              key={link.id}
+              icon={link.icon}
+              link={link.url}
+              displayText={link.text}
+            />
+          );
+        })}
+      </ul>
+    </nav>
   );
 };
 
