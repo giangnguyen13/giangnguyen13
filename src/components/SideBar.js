@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 import ArrowIcon from "./ArrowIcon";
 import { links } from "../data";
 
-const Sidebar = () => {
+const Sidebar = ({ activeSection }) => {
   const [isExpanded, setIsExpanded] = useState("expand");
   const openNavbar = () => {
     if (window.innerWidth > 600) {
@@ -28,7 +28,7 @@ const Sidebar = () => {
   };
 
   const toggleExpand = () => {
-    if (isExpanded == "expand") {
+    if (isExpanded === "expand") {
       setIsExpanded("");
       closeNavbar();
     } else {
@@ -59,26 +59,31 @@ const Sidebar = () => {
   return (
     <nav
       className={`navbar ${isExpanded}`}
-      style={{ width: "16rem", transition: "width 600ms ease 0s" }}
+      style={{
+        // fix issue on mobile when first load
+        width: window.innerWidth > 600 ? "16rem" : "-webkit-fill-available",
+        transition: "width 600ms ease 0s",
+      }}
     >
       <ul className={`navbar-nav ${isExpanded}`}>
         <li className='logo'>
-          <a
-            href='#'
+          <span
+            //href='#'
             className={`nav-link ${isExpanded}`}
             onClick={toggleExpand}
           >
             <span className='link-text logo-text'>(｡･∀･)ﾉﾞ</span>
             <ArrowIcon />
-          </a>
+          </span>
         </li>
         {links.map((link) => {
           return (
             <NavItem
               key={link.id}
               icon={link.icon}
-              link={link.url}
+              url={link.url}
               displayText={link.text}
+              isActive={link.url.includes(activeSection)}
             />
           );
         })}
