@@ -44,8 +44,8 @@ const Home = ({ setActiveSection }) => {
           </svg>
         </div>
       </div>
-      <hr className='featurette-divider'></hr>
-      <div className='row featurette'>
+      {/* <hr className='featurette-divider'></hr> */}
+      <div className='row featurette my-5'>
         <div className='col-md-7 order-md-2'>
           <h2 className='featurette-heading'>
             Oh yeah, it's that good.{" "}
@@ -76,7 +76,7 @@ const Home = ({ setActiveSection }) => {
           </svg>
         </div>
       </div>
-      <hr className='featurette-divider'></hr>
+      {/* <hr className='featurette-divider'></hr> */}
       <div className='row featurette mb-5'>
         <div className='col-md-7'>
           <h2 className='featurette-heading'>

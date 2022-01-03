@@ -38,7 +38,9 @@ body::-webkit-scrollbar-thumb {
 
 main {
   margin-left: 17rem;
-  padding: 1rem;
+  section {
+    padding: 5rem;
+  }
 }
 
 .navbar {
@@ -160,6 +162,7 @@ main {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 2000;
   }
 
   .logo {
@@ -177,6 +180,12 @@ main {
 
   main {
     margin: 0;
+    section {
+      padding: 0.5rem;
+    }
+  }
+  .card:last-child {
+    margin-bottom: 3rem;
   }
 }
 
@@ -205,7 +214,7 @@ main {
   // }
 
   .navbar .expand {
-    width: 16rem;
+    width: 17rem;
   }
 
   .navbar .expand .link-text {
@@ -213,7 +222,7 @@ main {
   }
 
   .navbar .expand .logo svg {
-    margin-left: 11rem;
+    margin-left: 13rem;
   }
 
   .navbar .expand .logo-text {
@@ -352,6 +361,10 @@ main {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+.featurette {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -383,7 +396,16 @@ main {
 }
 
 .cover-container {
-  max-width: 42em;
-  margin-top: 12em;
-  margin-bottom: 20em;
+  max-width: 49em;
+  margin-top: 1em;
+  margin-bottom: 6em;
+}
+
+.cover-heading {
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.dynamic-typist {
+  height: 3em;
 }

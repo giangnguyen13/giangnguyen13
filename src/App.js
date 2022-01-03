@@ -9,15 +9,15 @@ function App() {
     <>
       <Sidebar activeSection={activeSection} />
       <main id='introduction'>
-        <section>
+        <section style={{ paddingTop: 0 }}>
           <Welcome setActiveSection={setActiveSection} />
         </section>
         <section id='home'>
           <Home setActiveSection={setActiveSection} />
         </section>
-        <section id='projects'>
+        <React.Fragment>
           <Projects setActiveSection={setActiveSection} />
-        </section>
+        </React.Fragment>
       </main>
     </>
   );

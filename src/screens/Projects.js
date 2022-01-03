@@ -17,7 +17,7 @@ const Projects = ({ setActiveSection }) => {
   }, [inView, id, setActiveSection]);
 
   return (
-    <section className='basic-grid' ref={ref}>
+    <section id='projects' className='basic-grid' ref={ref}>
       {projects.map((project) => {
         return (
           <CardProjectItem
