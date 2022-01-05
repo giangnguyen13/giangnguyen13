@@ -5,10 +5,7 @@ import DynamicTypist from "../components/DynamicTypist";
 
 const Welcome = ({ setActiveSection }) => {
   const id = "introduction";
-  const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 0.1,
-  });
+  const { ref, inView } = useInView();
   useEffect(() => {
     if (inView) {
       setActiveSection(id);

@@ -4,8 +4,8 @@ import Typist from "react-typist";
 const DynamicTypist = () => {
   const texts = [
     "I am Full Stack Developer",
-    "An innovative designer",
-    "and A Logical Thinker",
+    "An Innovative Thinker",
+    "and A Problem Solver",
   ];
   const cursorConfig = {
     show: false,

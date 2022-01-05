@@ -17,7 +17,7 @@ const Projects = ({ setActiveSection }) => {
   }, [inView, id, setActiveSection]);
 
   return (
-    <section id='projects' className='basic-grid' ref={ref}>
+    <div className='basic-grid' ref={ref}>
       {projects.map((project) => {
         return (
           <CardProjectItem
@@ -30,7 +30,7 @@ const Projects = ({ setActiveSection }) => {
           />
         );
       })}
-    </section>
+    </div>
   );
 };
 

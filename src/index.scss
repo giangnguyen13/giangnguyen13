@@ -92,6 +92,8 @@ main {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
+  font-weight: bolder;
+  font-size: larger;
 }
 
 // .nav-link .expand {
@@ -187,6 +189,10 @@ main {
   .card:last-child {
     margin-bottom: 3rem;
   }
+  .featurette {
+    // margin-right: 1rem;
+    margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  }
 }
 
 /* Large screens */
@@ -227,6 +233,10 @@ main {
 
   .navbar .expand .logo-text {
     left: 0px;
+  }
+
+  .featurette {
+    margin-right: 5rem; /* Space out the Bootstrap <hr> more */
   }
 }
 
@@ -288,6 +298,41 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  .card-img-top {
+    height: 360px;
+    width: 100%;
+    display: block;
+    border-style: none;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-top: outset;
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      /* font-family: inherit;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit; */
+    }
+    .card-text {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  }
+  .card-footer {
+    padding: 2rem 0.5rem;
+    background-color: #fff;
+    border: none;
+    img {
+      padding: 0.25rem;
+      width: 5.5rem;
+    }
+  }
 }
 
 /* .card:hover {
@@ -299,36 +344,7 @@ main {
 .basic-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-}
-
-.card .card-img-top {
-  height: 360px;
-  width: 100%;
-  display: block;
-  border-style: none;
-}
-
-.card .card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
-
-.card .card-body .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  /* font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit; */
-}
-
-.card .card-body .card-text {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .btn-primary {
@@ -358,10 +374,6 @@ main {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-.featurette {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
@@ -408,4 +420,14 @@ main {
 
 .dynamic-typist {
   height: 3em;
+}
+
+.section-heading {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+#home {
+  margin-top: 15rem;
 }

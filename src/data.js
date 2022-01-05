@@ -30,7 +30,7 @@ export const links = [
   {
     id: 2,
     url: "#home",
-    text: "Story",
+    text: "About",
     icon: <PersonLinesFill size={ICON_SIZE} />,
   },
   {
@@ -116,6 +116,24 @@ export const projects = [
     title: "AFIB Forms",
     description:
       "A web-based application survey designed for iPad devices to allow physicians to record patient information through a set of surveys upon entrance to the hospital. Used Laravel, MSSQL Server, HTML, CSS, jQuery",
+    url: null,
+  },
+  {
+    id: 5,
+    img: "https://partnersinprojectgreen.com/app/uploads/2019/11/Unity_Health_Logo_CIRCULAR-newDec2019.jpg",
+    imgText: "Unity Health Toronto logo",
+    title: "Toronto Bicycle Theft Analyst",
+    description:
+      "A model using logistic regression and decision trees that consumes the data from the Toronto Police department to predict the possibility of recovering stolen bikes. The model is exported as an API and can be used via HTTP/REST. Used Panda, Numpy, Matplotlib, sklearn, seaborn, joblib, Flask, Python",
+    url: null,
+  },
+  {
+    id: 6,
+    img: "https://partnersinprojectgreen.com/app/uploads/2019/11/Unity_Health_Logo_CIRCULAR-newDec2019.jpg",
+    imgText: "Unity Health Toronto logo",
+    title: "Movie Share",
+    description:
+      "An online forum where users can share their favorite movies with people who have the same interest. Users can create, share, and comment on their opinion about the movies. Used S3, DynamoDB, ASP.NET, AWS ECS, Docker, Bootstrap",
     url: null,
   },
 ];

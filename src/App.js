@@ -13,11 +13,13 @@ function App() {
           <Welcome setActiveSection={setActiveSection} />
         </section>
         <section id='home'>
+          <h1 className='section-heading'>About me</h1>
           <Home setActiveSection={setActiveSection} />
         </section>
-        <React.Fragment>
+        <section id='projects'>
+          <h1 className='section-heading'>Projects</h1>
           <Projects setActiveSection={setActiveSection} />
-        </React.Fragment>
+        </section>
       </main>
     </>
   );
