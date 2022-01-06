@@ -1,19 +1,18 @@
-# Hello, It's Giang Nguyen o((>ω< ))o
+# Hello friends, Giang Nguyen here!! o((>ω< ))o
 
-_Web Developer at [Unity Health Toronto](https://unityhealth.to/) in Canada_ 🍁
+I'm a Full Stack Developer based in Canada 🍁. My experience in the web development field helps me deliver the best quality to many projects.
 
 [![Linkedin: giangnguyen13](https://img.shields.io/badge/-giangnguyen13-0A66C2?logo=Linkedin&logoColor=white&style=flat-square&link=https://www.linkedin.com/in/giangnguyen13/)](https://www.linkedin.com/in/giangnguyen13/)
 [![GitHub giangnguyen13](https://img.shields.io/github/followers/giangnguyen13?label=giangnguyen13&style=social)](https://github.com/giangnguyen13)
 
 ## About me (❁´◡`❁)
 
-- 👩‍🎓 I will graduate by end of 2021 ヾ(≧ ▽ ≦)ゝ
-- 🌱 I’m currently learning Front-end Frameworks (React in particular)
-- 👯 I’m looking to collaborate on React, Laravel, ASP.NET
-- 🤔 I’m looking for help with anything that I'm learning now ( •̀ ω •́ )y
-- 💬 Ask me anything about Laravel, SQL, Web-Dev
+- 👩‍🎓 I'm CS graduate at Centennial College ✍️(◔◡◔)
+- 🌱 My strength is Backend dev, but I also know Frontend frameworks as well
+- 👯 I’m looking to collaborate with people on Tech Industry ( •̀ ω •́ )y
+- 💬 Ask me anything (👉 ﾟヮﾟ)👉 Laravel, SQL, Web Development
 - ✉ Reach me at: [giangkawaii1999@gmail.com](mailto:giangkawaii1999@gmail.com)
-- ❓ Want to know more? [View my resume here](https://drive.google.com/file/d/1NA0np-qZgq0Qhqvx-FU4Xn-ePNhsIEHl/view)
+- ❓ Want to know more? [View my profile here](#)
 
 ## My Stack (o ゜ ▽ ゜)o☆
 
@@ -50,4 +49,4 @@ _Web Developer at [Unity Health Toronto](https://unityhealth.to/) in Canada_ �
 
 ---
 
-_**Thanks** for viewing [my profile](https://github.com/giangnguyen13). I'll be **happy** to **connect** with you_ 😀
+_**Thanks** for visiting [my repo](https://github.com/giangnguyen13). I'll be **happy** to **connect** with you_ ヾ(＠⌒ ー ⌒＠)ノ
