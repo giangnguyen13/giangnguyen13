@@ -3,7 +3,7 @@ import Typist from "react-typist";
 
 const DynamicTypist = () => {
   const texts = [
-    "I am Full Stack Developer",
+    "I am a Software Developer",
     "An Innovative Thinker",
     "and A Problem Solver",
   ];

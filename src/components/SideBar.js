@@ -89,7 +89,7 @@ const Sidebar = ({ activeSection }) => {
             className={`nav-link ${isExpanded}`}
             onClick={toggleExpand}
           >
-            <span className='link-text logo-text'>(｡･∀･)ﾉﾞ</span>
+            <span className='link-text logo-text'>&nbsp;(｡･∀･)ﾉﾞ</span>
             <ArrowIcon />
           </span>
         </li>

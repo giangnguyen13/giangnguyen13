@@ -19,7 +19,9 @@ const Welcome = ({ setActiveSection }) => {
         alt='Illustrate man sitting in front of the laptop'
         style={{ maxWidth: "500px" }}
       />
-      <h1 className='cover-heading'>Hello, It's Giang Nguyen (✪ ω ✪)</h1>
+      <h1 className='cover-heading'>
+        Hello, World! Giang Nguyen here! <br></br>(✪ ω ✪)
+      </h1>
       {/* <h1 style={{ height: "3em" }}>I'm Full Stack Developer</h1> */}
       <DynamicTypist />
       <p className='lead' style={{ paddingTop: "3rem" }}>
