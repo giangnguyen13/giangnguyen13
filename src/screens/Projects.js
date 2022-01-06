@@ -8,7 +8,7 @@ const Projects = ({ setActiveSection }) => {
   const id = "projects";
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.1,
+    threshold: 0.5,
   });
   useEffect(() => {
     if (inView) {

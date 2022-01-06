@@ -5,7 +5,7 @@ const Home = ({ setActiveSection }) => {
   const id = "home";
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.4,
+    threshold: 0.1,
   });
   useEffect(() => {
     if (inView) {

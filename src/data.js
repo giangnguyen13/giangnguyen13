@@ -1,23 +1,13 @@
 import React from "react";
 import logo from "./images/logo.jpg";
 import {
-  FaBehance,
-  FaFacebook,
-  FaLinkedin,
-  FaTwitter,
-  FaSketch,
-  // FaHome,
-  // FaUserFriends,
-  // FaFolderOpen,
-  // FaCalendarAlt,
-  // FaWpforms,
-} from "react-icons/fa";
-import {
   HouseFill,
   PersonLinesFill,
-  FileTextFill,
   CodeSquare,
-  Mailbox2,
+  Globe,
+  Linkedin,
+  Github,
+  FileEarmarkPersonFill,
 } from "react-bootstrap-icons";
 const ICON_SIZE = 32;
 export const links = [
@@ -37,47 +27,31 @@ export const links = [
     id: 3,
     url: "#projects",
     text: "Projects",
-    icon: <FileTextFill size={ICON_SIZE} />,
-  },
-  {
-    id: 4,
-    url: "/skills",
-    text: "Skills",
     icon: <CodeSquare size={ICON_SIZE} />,
   },
   {
-    id: 5,
-    url: "/contact",
+    id: 4,
+    url: "#contact",
     text: "Contact",
-    icon: <Mailbox2 size={ICON_SIZE} />,
+    icon: <Globe size={ICON_SIZE} />,
   },
 ];
 
-export const social = [
+export const socials = [
   {
     id: 1,
-    url: "https://www.twitter.com",
-    icon: <FaFacebook />,
+    url: "https://www.linkedin.com/in/giangnguyen13/",
+    icon: <Linkedin size={75} />,
   },
   {
     id: 2,
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
+    url: "https://github.com/giangnguyen13",
+    icon: <Github size={75} color='black' />,
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
-    icon: <FaLinkedin />,
-  },
-  {
-    id: 4,
-    url: "https://www.twitter.com",
-    icon: <FaBehance />,
-  },
-  {
-    id: 5,
-    url: "https://www.twitter.com",
-    icon: <FaSketch />,
+    url: "/GiangNguyen_Resume.pdf",
+    icon: <FileEarmarkPersonFill size={75} color='black' />,
   },
 ];
 

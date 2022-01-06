@@ -3,6 +3,8 @@ import Sidebar from "./components/SideBar";
 import Welcome from "./screens/Welcome";
 import Home from "./screens/Home";
 import Projects from "./screens/Projects";
+import Contact from "./screens/Contact";
+
 function App() {
   const [activeSection, setActiveSection] = useState("introduction");
   return (
@@ -19,6 +21,9 @@ function App() {
         <section id='projects'>
           <h1 className='section-heading'>Projects</h1>
           <Projects setActiveSection={setActiveSection} />
+        </section>
+        <section id='contact' className='text-center'>
+          <Contact setActiveSection={setActiveSection} />
         </section>
       </main>
     </>

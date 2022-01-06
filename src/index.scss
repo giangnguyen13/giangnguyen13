@@ -17,7 +17,7 @@ html {
 
 body {
   color: black;
-  background-color: #fff0f5;
+  background-color: #f4f5f9;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -129,7 +129,7 @@ main {
 .logo {
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-top: auto;
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
@@ -430,4 +430,46 @@ main {
 
 #home {
   margin-top: 15rem;
+}
+
+section:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+.contact-btn {
+  margin: 0.5rem;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #050710;
+  background-color: transparent;
+  // border-color: #050710;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #050710;
+  border-color: #050710;
+}
+
+.text-large {
+  font-size: x-large;
+}
+
+.social-icon {
+  margin: 1rem;
 }

@@ -83,16 +83,6 @@ const Sidebar = ({ activeSection }) => {
         //   }
         // }}
       >
-        <li className='logo'>
-          <span
-            //href='#'
-            className={`nav-link ${isExpanded}`}
-            onClick={toggleExpand}
-          >
-            <span className='link-text logo-text'>&nbsp;(｡･∀･)ﾉﾞ</span>
-            <ArrowIcon />
-          </span>
-        </li>
         {links.map((link) => {
           return (
             <NavItem
@@ -104,6 +94,16 @@ const Sidebar = ({ activeSection }) => {
             />
           );
         })}
+        <li className='logo'>
+          <span
+            //href='#'
+            className={`nav-link ${isExpanded}`}
+            onClick={toggleExpand}
+          >
+            <span className='link-text logo-text'>&nbsp;(｡･∀･)ﾉﾞ</span>
+            <ArrowIcon />
+          </span>
+        </li>
       </ul>
     </nav>
   );
