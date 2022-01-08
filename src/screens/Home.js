@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import WebsiteDesign from "../images/WebsiteDesign.svg";
+import ProductStrategy from "../images/ProductStrategy.svg";
+import WebsiteHosting from "../images/WebsiteHosting.svg";
+import EBook from "../images/EBook.svg";
+import MapleLeaf from "../images/MapleLeaf.svg";
 
 const Home = ({ setActiveSection }) => {
   const id = "home";
@@ -15,97 +20,63 @@ const Home = ({ setActiveSection }) => {
   return (
     <>
       <div className='row featurette mt-3' ref={ref}>
-        <div className='col-md-7'>
-          <h2 className='featurette-heading'>
-            First featurette heading.{" "}
-            <span className='text-muted'>It’ll blow your mind.</span>
-          </h2>
-          <p className='lead'>
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
+        <div className='col-md-7 order-md-2'>
+          <p className='lead' style={{ marginTop: "5rem" }}>
+            My name is Giang, I'm Software Developer and currently reside in
+            Canada&nbsp;
+            <span>
+              <img
+                src={MapleLeaf}
+                alt='Maple leaf Icon'
+                style={{ width: "1.5rem", verticalAlign: "middle" }}
+              />
+            </span>
+            . My background is Computer Science at Centennial College and I have
+            2 years of hand-on experience in the software industry.
           </p>
         </div>
         <div className='col-md-5'>
-          <svg
-            className='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto'
-            width='500'
-            height='500'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 500x500'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#eee' />
-            <text x='50%' y='50%' fill='#aaa' dy='.3em'>
-              500x500
-            </text>
-          </svg>
+          <img src={WebsiteDesign} alt='design image' />
         </div>
       </div>
-      {/* <hr className='featurette-divider'></hr> */}
       <div className='row featurette my-5'>
-        <div className='col-md-7 order-md-2'>
-          <h2 className='featurette-heading'>
-            Oh yeah, it's that good.{" "}
-            <span className='text-muted'>See for yourself.</span>
-          </h2>
+        <div className='col-md-7'>
           <p className='lead'>
-            Another featurette? Of course. More placeholder content here to give
-            you an idea of how this layout would work with some actual
-            real-world content in place.
+            I love to solve the problems, from small to complicated one, and
+            working on software development is really gave me lots of chances to
+            practice and improve this ability. With my great communication
+            skills, I have guild and support other team members to many
+            successful projects.
           </p>
         </div>
         <div className='col-md-5 order-md-1'>
-          <svg
-            className='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto'
-            width='500'
-            height='500'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 500x500'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#eee' />
-            <text x='50%' y='50%' fill='#aaa' dy='.3em'>
-              500x500
-            </text>
-          </svg>
+          <img src={ProductStrategy} alt='design image' />
         </div>
       </div>
-      {/* <hr className='featurette-divider'></hr> */}
       <div className='row featurette mb-5'>
-        <div className='col-md-7'>
-          <h2 className='featurette-heading'>
-            And lastly, this one. <span className='text-muted'>Checkmate.</span>
-          </h2>
+        <div className='col-md-7 order-md-2'>
           <p className='lead'>
-            And yes, this is the last block of representative placeholder
-            content. Again, not really intended to be actually read, simply here
-            to give you a better view of what this would look like with some
-            actual content. Your content.
+            I have both experience with the traditional server-side rendering
+            method (.NET, Laravel) to single page application (ReactJS, VueJS).
+            Apart from these stacks, I always try to learn and experiment new
+            technologies like working with the Cloud Services or doing Mobile
+            Development.
           </p>
         </div>
         <div className='col-md-5'>
-          <svg
-            className='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto'
-            width='500'
-            height='500'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 500x500'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#eee' />
-            <text x='50%' y='50%' fill='#aaa' dy='.3em'>
-              500x500
-            </text>
-          </svg>
+          <img src={WebsiteHosting} alt='design image' />
+        </div>
+      </div>
+      <div className='row featurette mb-5'>
+        <div className='col-md-7'>
+          <p className='lead'>
+            When I'm not working to the tech-related tasks, I spend my time to
+            read books and manga, cook fancy meals, do workout, and watch funny
+            things on the internet.
+          </p>
+        </div>
+        <div className='col-md-5'>
+          <img src={EBook} alt='design image' />
         </div>
       </div>
     </>

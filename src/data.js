@@ -50,7 +50,7 @@ export const socials = [
   },
   {
     id: 3,
-    url: "/GiangNguyen_Resume.pdf",
+    url: "https://drive.google.com/file/d/1cEim-bkQz3ODZHfeyyYIe4p6bSEOSvKt/view",
     icon: <FileEarmarkPersonFill size={75} color='black' />,
   },
 ];
