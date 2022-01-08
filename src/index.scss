@@ -238,6 +238,9 @@ main {
   .featurette {
     margin-right: 5rem; /* Space out the Bootstrap <hr> more */
   }
+  .lead:first-child {
+    margin-top: 5rem;
+  }
 }
 
 .dark {
@@ -344,7 +347,7 @@ main {
 .basic-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .btn-primary {

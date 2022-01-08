@@ -21,7 +21,7 @@ const Home = ({ setActiveSection }) => {
     <>
       <div className='row featurette mt-3' ref={ref}>
         <div className='col-md-7 order-md-2'>
-          <p className='lead' style={{ marginTop: "5rem" }}>
+          <p className='lead'>
             My name is Giang, I'm Software Developer and currently reside in
             Canada&nbsp;
             <span>

@@ -21,14 +21,14 @@ const Welcome = ({ setActiveSection }) => {
       />
       <h1 className='cover-heading'>(｡･∀･)ﾉﾞ Hi, I'm Giang!</h1>
       <DynamicTypist />
-      <div class='mouse_scroll'>
-        <div class='mouse'>
-          <div class='wheel'></div>
+      <div className='mouse_scroll'>
+        <div className='mouse'>
+          <div className='wheel'></div>
         </div>
         <div>
-          <span class='m_scroll_arrows unu'></span>
-          <span class='m_scroll_arrows doi'></span>
-          <span class='m_scroll_arrows trei'></span>
+          <span className='m_scroll_arrows unu'></span>
+          <span className='m_scroll_arrows doi'></span>
+          <span className='m_scroll_arrows trei'></span>
         </div>
       </div>
     </div>
