@@ -6,8 +6,8 @@ import WebsiteHosting from "../images/WebsiteHosting.svg";
 import EBook from "../images/EBook.svg";
 import MapleLeaf from "../images/MapleLeaf.svg";
 
-const Home = ({ setActiveSection }) => {
-  const id = "home";
+const About = ({ setActiveSection }) => {
+  const id = "about";
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.1,
@@ -83,4 +83,4 @@ const Home = ({ setActiveSection }) => {
   );
 };
 
-export default Home;
+export default About;

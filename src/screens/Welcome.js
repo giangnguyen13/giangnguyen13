@@ -4,7 +4,7 @@ import Blogging from "../images/blogging.svg";
 import DynamicTypist from "../components/DynamicTypist";
 
 const Welcome = ({ setActiveSection }) => {
-  const id = "introduction";
+  const id = "home";
   const { ref, inView } = useInView();
   useEffect(() => {
     if (inView) {

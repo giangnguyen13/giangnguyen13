@@ -13,13 +13,13 @@ const ICON_SIZE = 32;
 export const links = [
   {
     id: 1,
-    url: "#introduction",
+    url: "#home",
     text: "Home",
     icon: <HouseFill size={ICON_SIZE} />,
   },
   {
     id: 2,
-    url: "#home",
+    url: "#about",
     text: "About",
     icon: <PersonLinesFill size={ICON_SIZE} />,
   },
