@@ -19,16 +19,18 @@ const Welcome = ({ setActiveSection }) => {
         alt='Illustrate man sitting in front of the laptop'
         style={{ maxWidth: "500px" }}
       />
-      <h1 className='cover-heading'>
-        Hello, World! Giang Nguyen here! <br></br>(✪ ω ✪)
-      </h1>
-      {/* <h1 style={{ height: "3em" }}>I'm Full Stack Developer</h1> */}
+      <h1 className='cover-heading'>(｡･∀･)ﾉﾞ Hi, I'm Giang!</h1>
       <DynamicTypist />
-      <p className='lead' style={{ paddingTop: "3rem" }}>
-        <a href='#home' className='btn btn-lg btn-outline-secondary'>
-          ⬇ Scroll Down ⬇
-        </a>
-      </p>
+      <div class='mouse_scroll'>
+        <div class='mouse'>
+          <div class='wheel'></div>
+        </div>
+        <div>
+          <span class='m_scroll_arrows unu'></span>
+          <span class='m_scroll_arrows doi'></span>
+          <span class='m_scroll_arrows trei'></span>
+        </div>
+      </div>
     </div>
   );
 };
