@@ -9,7 +9,7 @@ const Sidebar = ({ activeSection }) => {
   const [isHover, setIsHover] = useState(EXPAND_STATE);
   const openNavbar = () => {
     if (window.innerWidth > 600) {
-      let main = document.getElementById("introduction");
+      let main = document.getElementById("home");
       main.style.marginLeft = "17rem";
       main.style.transition = "margin 600ms ease";
       let navbar = document.getElementsByClassName("navbar")[0];
@@ -20,7 +20,7 @@ const Sidebar = ({ activeSection }) => {
 
   const closeNavbar = () => {
     if (window.innerWidth > 600) {
-      let main = document.getElementById("introduction");
+      let main = document.getElementById("home");
       main.style.marginLeft = "5rem";
       main.style.transition = "margin 600ms ease";
       let navbar = document.getElementsByClassName("navbar")[0];
@@ -41,7 +41,7 @@ const Sidebar = ({ activeSection }) => {
 
   useEffect(() => {
     function handleResize() {
-      let main = document.getElementById("introduction");
+      let main = document.getElementById("home");
       let navbar = document.getElementsByClassName("navbar")[0];
       if (window.innerWidth > 600) {
         main.style.marginLeft = isExpanded ? "17rem" : "5rem";
