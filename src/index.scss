@@ -306,6 +306,7 @@ main {
     width: 100%;
     display: block;
     border-style: none;
+    padding: 2rem;
   }
   .card-body {
     flex: 1 1 auto;
@@ -314,8 +315,8 @@ main {
     .card-title {
       font-size: 1.25rem;
       margin-bottom: 0.75rem;
+      font-weight: bold;
       /* font-family: inherit;
-      font-weight: 500;
       line-height: 1.2;
       color: inherit; */
     }
@@ -333,7 +334,8 @@ main {
     border: none;
     img {
       padding: 0.25rem;
-      width: 5.5rem;
+      width: 5rem;
+      height: 2.5rem;
     }
   }
 }
@@ -347,7 +349,7 @@ main {
 .basic-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .btn-primary {

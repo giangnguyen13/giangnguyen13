@@ -27,6 +27,7 @@ const Projects = ({ setActiveSection }) => {
             title={project.title}
             description={project.description}
             url={project.url}
+            techs={project.techs}
           />
         );
       })}

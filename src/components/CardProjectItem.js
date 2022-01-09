@@ -1,20 +1,34 @@
 import React from "react";
 
-const CardProjectItem = ({ img, imgText, title, description, url }) => {
-  const openLink = () => {
-    window.open(url, "_blank");
-  };
+const CardProjectItem = ({ img, imgText, title, description, url, techs }) => {
   return (
-    <div className='card' onClick={openLink}>
-      <img src={img} alt={imgText} srcSet='' className='card-img-top' />
+    <div className='card'>
+      <img src={img} alt={imgText} className='card-img-top' />
       <div className='card-body'>
-        <h5 className='card-title'>{title}</h5>
+        <h5 className='card-title text-center'>{title}</h5>
         <p className='card-text'>{description}</p>
+        {url && (
+          <div className='row mx-auto mb-2 justify-content-center'>
+            <a
+              href={url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn btn-sm btn-outline-primary'
+              style={{ width: "fit-content" }}
+            >
+              Demo
+            </a>
+          </div>
+        )}
       </div>
       <div className='card-footer'>
-        <img src='https://camo.githubusercontent.com/2517e229fd25bacf06ae6d79587c69f2ec75a0cd2860344ecd1994e28bab0759/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c352d4533344632363f6c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265' />
-        <img src='https://camo.githubusercontent.com/2517e229fd25bacf06ae6d79587c69f2ec75a0cd2860344ecd1994e28bab0759/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c352d4533344632363f6c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265' />
-        <img src='https://camo.githubusercontent.com/2517e229fd25bacf06ae6d79587c69f2ec75a0cd2860344ecd1994e28bab0759/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c352d4533344632363f6c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265' />
+        <div className='row justify-content-center'>
+          {techs.map((tech) => {
+            return (
+              <img key={tech.id} src={tech.source} alt={tech.description} />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
