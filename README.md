@@ -35,7 +35,7 @@ I'm a Full Stack Developer based in Canada 🍁. My experience in the web develo
 #### Other Technologies
 
 ![C#](https://img.shields.io/badge/-68217A?logo=c-sharp&style=flat-square)
-![JAVA](https://img.shields.io/badge/-Java-007396?style=flat-square)
+![JAVA](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=red&style=flat-square)
 ![PHP](https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat-square)
 
 ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)
