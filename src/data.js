@@ -14,6 +14,7 @@ import {
   Linkedin,
   Github,
   FileEarmarkPersonFill,
+  Files,
 } from "react-bootstrap-icons";
 const ICON_SIZE = 32;
 export const links = [
@@ -31,12 +32,18 @@ export const links = [
   },
   {
     id: 3,
-    url: "#projects",
-    text: "Projects",
+    url: "#skills",
+    text: "Skills",
     icon: <CodeSquare size={ICON_SIZE} />,
   },
   {
     id: 4,
+    url: "#projects",
+    text: "Projects",
+    icon: <Files size={ICON_SIZE} />,
+  },
+  {
+    id: 5,
     url: "#contact",
     text: "Contact",
     icon: <Globe size={ICON_SIZE} />,
@@ -61,109 +68,126 @@ export const socials = [
   },
 ];
 
-const techLabels = {
+export const techLabels = {
   html: {
     id: 1,
     source: "https://img.shields.io/badge/-HTML5-E34F26",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square",
     description: "HTML logo with HTML as text and orange background",
   },
   jquery: {
     id: 2,
     source: "https://img.shields.io/badge/-jQuery-0769AD",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-jQuery-0769AD?logo=jquery&logoColor=white&style=flat-square",
     description: "jQuery logo with jQuery as text and blue background",
   },
   js: {
     id: 3,
     source: "https://img.shields.io/badge/-JavaScript-F7DF1E",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-JavaScript-000000?logo=javascript&logoColor=F7DF1E&style=flat-square",
     description: "JavaScript logo with JavaScript as text and black background",
   },
   laravel: {
     id: 4,
     source: "https://img.shields.io/badge/-Laravel-FF2D20",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-Laravel-FF2D20?logo=laravel&logoColor=white&style=flat-square",
     description: "Laravel logo in red background with text",
   },
   mssql: {
     id: 5,
     source: "https://img.shields.io/badge/-MSSQL%20Server-CC2927",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-MS%20SQL%20Server-e7e7e7?logo=microsoft-sql-server&logoColor=CC2927&style=flat-square",
     description: "Microsoft SQL Server logo in gray background with text",
   },
   reactjs: {
     id: 6,
     source: "https://img.shields.io/badge/-React-61DAFB",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-React-282c34?logo=react&logoColor=61dafb&style=flat-square",
     description: "React logo in black background with text",
   },
   expressjs: {
     id: 7,
     source: "https://img.shields.io/badge/-ExpressJS-000000",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-ExpressJS-000000?logo=express&logoColor=white&style=flat-square",
     description: "ExpressJS logo in red background with text",
   },
   nodejs: {
     id: 8,
     source: "https://img.shields.io/badge/-NodeJS-339933",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-Nodejs-339933?logo=node.js&logoColor=white&style=flat-square",
     description: "Nodejs text in green background",
   },
   mongodb: {
     id: 9,
     source: "https://img.shields.io/badge/-MongoDB-47A248",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-MongoDB-e6e6e6?logo=mongoDB&logoColor=47A248&style=flat-square",
     description: "MongoDB logo in gray background with text",
   },
   git: {
     id: 10,
     source: "https://img.shields.io/badge/-Git-F05032",
     description: "Git logo in orange background with text",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=flat-square",
   },
   github: {
     id: 11,
     source: "https://img.shields.io/badge/-GitHub-181717",
     description: "GitHub logo in black background with text",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-GitHub-181717?logo=github&style=flat-square",
   },
   gitlab: {
     id: 12,
     source: "https://img.shields.io/badge/-GitLab-FCA121",
     description: "GitLab logo in purple background with text",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-GitLab-9B51E0?logo=gitlab&style=flat-square",
   },
   csharp: {
     id: 13,
     source:
       "https://img.shields.io/badge/-239120?logo=c-sharp&style=flat-square",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-68217A?logo=c-sharp&style=flat-square",
     description: "C# logo in dark purple background",
   },
   java: {
     id: 14,
     source: "https://img.shields.io/badge/-Java-007396",
     description: "Java logo with blue background",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-Java-007396?logo=java&logoColor=red&style=flat-square",
   },
   php: {
     id: 15,
     source: "https://img.shields.io/badge/-PHP-777BB4",
     description: "PHP logo with purple background and text",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat-square",
   },
   css: {
     id: 16,
     source: "https://img.shields.io/badge/-CSS3-1572B6",
     description: "CSS3 logo in blue background and text",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat-square",
   },
   sass: {
     id: 17,
     source: "https://img.shields.io/badge/-SASS-CC6699",
     description: "SASS logo with pink background",
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-SASS-CC6699?logo=sass&logoColor=white&style=flat-square",
   },
   vscode: {
     id: 18,
@@ -199,14 +223,14 @@ const techLabels = {
   aws: {
     id: 23,
     badge:
-      "https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&color=232f3e&style=flat-square&labelColor=e26308",
+      "https://img.shields.io/badge/-Amazon%20Web%20Services-232F3E?logo=amazon-aws&color=232f3e&style=flat-square&labelColor=e26308",
     source: "https://img.shields.io/badge/-AWS-E26308",
     description: "Amazon Web Services Logo with text",
   },
   azure: {
     id: 24,
     badge:
-      "https://img.shields.io/badge/-Azure-0078D4?logo=microsoft%20azure&logoColor=white&style=flat-square",
+      "https://img.shields.io/badge/-Microsoft%20Azure-0078D4?logo=microsoft%20azure&logoColor=white&style=flat-square",
     source: "https://img.shields.io/badge/-Microsoft%20Azure-0078D7",
     description: "Microsoft Azure Logo with text",
   },
@@ -306,7 +330,8 @@ const techLabels = {
   },
   redux: {
     id: 39,
-    badge: "badge_source",
+    badge:
+      "https://img.shields.io/badge/-Redux-764ABC?logo=redux&?style=flat-square",
     source: "https://img.shields.io/badge/-Redux-764ABC?logo=redux",
     description: "Redux Service text",
   },
@@ -338,8 +363,8 @@ const techLabels = {
   },
   jest: {
     id: 44,
-    badge: "badge_source",
-    source: "https://img.shields.io/badge/-JEST-15C213",
+    badge: "https://img.shields.io/badge/-Jest-C21325?logo=jest&color=15C213",
+    source: "https://img.shields.io/badge/-Jest-15C213",
     description: "Testing framework for React application tree text",
   },
   heroku: {
@@ -362,6 +387,20 @@ const techLabels = {
       "https://img.shields.io/badge/-Material--Design-757575?logo=material%20design&style=flat-square&logoColor=fff",
     source: "https://img.shields.io/badge/-Material%20Design-757575",
     description: "Material Design from Google db for simple storage text",
+  },
+  firebase: {
+    id: 48,
+    badge:
+      "https://img.shields.io/badge/-Firebase-039BE5?logo=firebase&style=flat-square",
+    source: "https://img.shields.io/badge/-Firebase-FFCA28",
+    description: "Firebase from Google db for simple storage text",
+  },
+  slack: {
+    id: 49,
+    badge:
+      "https://img.shields.io/badge/-Slack-4A154B?logo=slack&style=flat-square",
+    source: "https://img.shields.io/badge/-Slack-4A154B",
+    description: "Firebase from Google db for simple storage text",
   },
 };
 
@@ -502,6 +541,70 @@ export const projects = [
       techLabels.expressjs,
       techLabels.mongodb,
       techLabels.c45,
+    ],
+  },
+];
+
+export const skills = [
+  {
+    title: "Frontend",
+    skills: [
+      techLabels.html,
+      techLabels.css,
+      techLabels.sass,
+      techLabels.bootstrap,
+      techLabels.materialdesign,
+      techLabels.jquery,
+      techLabels.js,
+      techLabels.reactjs,
+      techLabels.redux,
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      techLabels.nodejs,
+      techLabels.expressjs,
+      techLabels.nextjs,
+      techLabels.laravel,
+      techLabels.php,
+      techLabels.dotnet,
+      techLabels.csharp,
+      techLabels.java,
+      techLabels.python,
+      techLabels.firebase,
+    ],
+  },
+  {
+    title: "Database",
+    skills: [
+      techLabels.mssql,
+      techLabels.mysql,
+      techLabels.sqlite,
+      techLabels.mongodb,
+      techLabels.dynamodb,
+    ],
+  },
+  {
+    title: "Cloud technologies",
+    skills: [techLabels.aws, techLabels.azure, techLabels.heroku],
+  },
+  {
+    title: "Other Technologies",
+    skills: [
+      techLabels.git,
+      techLabels.github,
+      techLabels.gitlab,
+      techLabels.docker,
+      techLabels.s3storage,
+      techLabels.paypal,
+      techLabels.stripe,
+      techLabels.sklearn,
+      techLabels.numpy,
+      techLabels.pandas,
+      techLabels.matplotlib,
+      techLabels.jest,
+      techLabels.slack,
     ],
   },
 ];

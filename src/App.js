@@ -4,6 +4,7 @@ import Welcome from "./screens/Welcome";
 import About from "./screens/About";
 import Projects from "./screens/Projects";
 import Contact from "./screens/Contact";
+import Skills from "./screens/Skills";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -17,6 +18,10 @@ function App() {
         <section id='about'>
           <h1 className='section-heading'>About me</h1>
           <About setActiveSection={setActiveSection} />
+        </section>
+        <section id='skills'>
+          <h1 className='section-heading'>Technical Skills</h1>
+          <Skills setActiveSection={setActiveSection} />
         </section>
         <section id='projects'>
           <h1 className='section-heading'>Projects</h1>

@@ -193,6 +193,11 @@ main {
     // margin-right: 1rem;
     margin: 1rem 0; /* Space out the Bootstrap <hr> more */
   }
+  #skills {
+    h2 {
+      margin-left: 0.5rem;
+    }
+  }
 }
 
 /* Large screens */
@@ -482,6 +487,15 @@ section:nth-child(even) {
 .lead {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.tech-label {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+.skill-set {
+  margin: 3rem 0;
 }
 
 .mouse_scroll {
