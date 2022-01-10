@@ -20,7 +20,7 @@ const Contact = ({ setActiveSection }) => {
         <h1 className='mb-4 cover-heading'>Hi there, thanks for visiting!</h1>
         <p className='text-large'>
           I am appreciated that you spent your valuable time to read about my
-          profile. You have reached end of the page now. But do not leave yet,
+          portfolio. You have reached end of the page now. But do not leave yet,
           if you are interested in my profile, there are more things I want to
           share too. So let's create a connection.
         </p>
