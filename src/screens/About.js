@@ -36,7 +36,10 @@ const About = ({ setActiveSection }) => {
           </p>
         </div>
         <div className='col-md-5'>
-          <img src={WebsiteDesign} alt='design image' />
+          <img
+            src={WebsiteDesign}
+            alt='a man with the laptop pointing on the screen design'
+          />
         </div>
       </div>
       <div className='row featurette my-5'>
@@ -50,7 +53,7 @@ const About = ({ setActiveSection }) => {
           </p>
         </div>
         <div className='col-md-5 order-md-1'>
-          <img src={ProductStrategy} alt='design image' />
+          <img src={ProductStrategy} alt='man holding bishop' />
         </div>
       </div>
       <div className='row featurette mb-5'>
@@ -64,7 +67,10 @@ const About = ({ setActiveSection }) => {
           </p>
         </div>
         <div className='col-md-5'>
-          <img src={WebsiteHosting} alt='design image' />
+          <img
+            src={WebsiteHosting}
+            alt='man with laptop in front of computer chip'
+          />
         </div>
       </div>
       <div className='row featurette mb-5'>
@@ -76,7 +82,7 @@ const About = ({ setActiveSection }) => {
           </p>
         </div>
         <div className='col-md-5'>
-          <img src={EBook} alt='design image' />
+          <img src={EBook} alt='man pointing to VR screen with phone' />
         </div>
       </div>
     </>

@@ -6,7 +6,6 @@ import { links } from "../data";
 const Sidebar = ({ activeSection }) => {
   const EXPAND_STATE = "expand";
   const [isExpanded, setIsExpanded] = useState(EXPAND_STATE);
-  const [isHover, setIsHover] = useState(EXPAND_STATE);
   const openNavbar = () => {
     if (window.innerWidth > 600) {
       let main = document.getElementById("home");

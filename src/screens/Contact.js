@@ -39,6 +39,7 @@ const Contact = ({ setActiveSection }) => {
                 key={social.id}
                 href={social.url}
                 target={"_blank"}
+                rel='noreferrer noopener'
                 className='social-icon'
               >
                 {social.icon}
